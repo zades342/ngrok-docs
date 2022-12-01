@@ -83,7 +83,7 @@ To register a webhook on your Airship account follow the instructions below:
 1. Enter `My Local Webhook` in the **Display Name** field, enter `MyLocalWebhook` in the **Name** field, and enter the URL provided by the ngrok agent to expose your application to the internet in the **Webhook URL** field (i.e. `https://1a2b-3c4d-5e6f-7g8h-9i0j.sa.ngrok.io`).
     ![Webhook URL](img/ngrok_url_configuration_airship.png)
 
-1. Select **Signature** in the **Authentication** field, enter `12345` in the **Secret Key** field, and then click **Save**.
+1. Click **Save**.
 
 
 ### Run Webhooks with Airship and ngrok
@@ -134,7 +134,15 @@ The ngrok signature webhook verification feature allows ngrok to assert that req
 
 This is a quick step to add extra protection to your application.
 
-1. Restart your ngrok agent by running the command, replacing `{your webhook secret}` with the value you have copied before (See [Integrate ngrok and Airship](#setup-webhook)):
+1. Access [Airship](https://www.airship.com/) and sign in using your Airship account.
+
+1. On the **App Projects** page, click on one of your projects.
+
+1. On the top menu, click **Settings**, click **Open Channels** under the **Channels** section, and then click **Edit** in the **My Local Webhook** tile.
+
+1. Select **Signature** in the **Authentication** field, enter `12345` in the **Secret Key** field, and then click **Update**.
+
+1. Restart your ngrok agent by running the command, replacing `{your webhook secret}` with the value of the **Secret Key** field (See [Integrate ngrok and Airship]{#setup-webhook)}:
     ```bash
     ngrok http 3000 --verify-webhook airship --verify-webhook-secret {your webhook secret}
     ```
