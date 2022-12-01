@@ -91,7 +91,19 @@ To register a webhook on your Airship account follow the instructions below:
 Airship sends different request body contents depending on the event that is being triggered.
 You can trigger new calls from Airship to your application by following the instructions below.
 
+1. Access your Airship application from the [Applications](https://go.airship.com/apps/) page.
 
+1. On the top menu, click **Messages**, click **Messages Overview**, and then click the **+** icon on the top right corner of the page.
+
+1. On the **What would you like to create** page, click the **Message** tile.
+
+1. On the **Who will receive your message** page, select **My Local Webhook** as the channel and select the users.
+
+1. Click **Content** on the top menu, click **Custom Message**, and enter any text in the **Alert Text** field.
+
+1. Click **Delivery** on the top menu and click **Send now**.
+
+1. Click **Review & Send** on the top menu and click **Send Message**.
 
     Confirm your localhost app receives event notifications and logs both headers and body in the terminal.
 
@@ -134,19 +146,17 @@ The ngrok signature webhook verification feature allows ngrok to assert that req
 
 This is a quick step to add extra protection to your application.
 
-1. Access [Airship](https://www.airship.com/) and sign in using your Airship account.
-
-1. On the **App Projects** page, click on one of your projects.
+1. Access your Airship application from the [Applications](https://go.airship.com/apps/) page.
 
 1. On the top menu, click **Settings**, click **Open Channels** under the **Channels** section, and then click **Edit** in the **My Local Webhook** tile.
 
 1. Select **Signature** in the **Authentication** field, enter `12345` in the **Secret Key** field, and then click **Update**.
 
-1. Restart your ngrok agent by running the command, replacing `{your webhook secret}` with the value of the **Secret Key** field (See [Integrate ngrok and Airship]{#setup-webhook)}:
+1. Restart your ngrok agent by running the command, replacing `{your webhook secret}` with the value of the **Secret Key** field:
     ```bash
     ngrok http 3000 --verify-webhook airship --verify-webhook-secret {your webhook secret}
     ```
 
-1. Access [Airship](https://www.airship.com) and create a new project.
+1. Access your [Airship](https://www.airship.com) application and create a new message.
 
 Verify that your local application receives the request and logs information to the terminal.
