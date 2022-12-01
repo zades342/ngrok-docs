@@ -1,7 +1,6 @@
 # Airship Webhooks
 ------------
 
-https://docs.airship.com/platform/open/getting-started/
 
 :::tip TL;DR
 
