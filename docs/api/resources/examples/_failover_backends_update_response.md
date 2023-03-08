@@ -2,9 +2,9 @@
 #### Example Response
 ```json
 {
-  "id": "bkdfo_2GjEza3n5kT7LopLM8BXKSqmZmM",
-  "uri": "https://api.ngrok.com/backends/failover/bkdfo_2GjEza3n5kT7LopLM8BXKSqmZmM",
-  "created_at": "2022-10-27T18:04:15Z",
+  "id": "bkdfo_2MkSAUSH7ursxgMYC5M5j7J0hUQ",
+  "uri": "https://api.ngrok.com/backends/failover/bkdfo_2MkSAUSH7ursxgMYC5M5j7J0hUQ",
+  "created_at": "2023-03-08T21:12:23Z",
   "description": "acme failover",
   "metadata": "{\"environment\": \"production\"}",
   "backends": []

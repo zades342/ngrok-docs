@@ -2,9 +2,9 @@
 #### Example Response
 ```json
 {
-  "id": "abrp_2GjEzLihYfqfzu4xi8yUeJ3mi71",
-  "uri": "https://api.ngrok.com/abuse_reports/abrp_2GjEzLihYfqfzu4xi8yUeJ3mi71",
-  "created_at": "2022-10-27T18:04:13Z",
+  "id": "abrp_2MkSAF5gzvYiXwfg8q9AXACZ9wa",
+  "uri": "https://api.ngrok.com/abuse_reports/abrp_2MkSAF5gzvYiXwfg8q9AXACZ9wa",
+  "created_at": "2023-03-08T21:12:21Z",
   "urls": [
     "http://legit-facebook-login.ngrok.io/login"
   ],

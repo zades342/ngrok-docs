@@ -2,12 +2,12 @@
 #### Example Response
 ```json
 {
-  "edge_id": "edghts_2GjEzauDT9HwwcMwJ1zoDnv7A1t",
-  "id": "edghtsrt_2GjEzZDctNIzVHa5Dcjxk25rM1x",
-  "created_at": "2022-10-27T18:04:15Z",
+  "edge_id": "edghts_2MkSAdflsh04DjhO448k68WLDfo",
+  "id": "edghtsrt_2MkSAdMkn3R6bY48lAmBigXgqAM",
+  "created_at": "2023-03-08T21:12:24Z",
   "match_type": "path_prefix",
   "match": "/",
-  "uri": "https://api.ngrok.com/edges/https/edghts_2GjEzauDT9HwwcMwJ1zoDnv7A1t/routes/edghtsrt_2GjEzZDctNIzVHa5Dcjxk25rM1x",
+  "uri": "https://api.ngrok.com/edges/https/edghts_2MkSAdflsh04DjhO448k68WLDfo/routes/edghtsrt_2MkSAdMkn3R6bY48lAmBigXgqAM",
   "metadata": "{\"environment\": \"production\"}",
   "backend": null,
   "ip_restriction": null,

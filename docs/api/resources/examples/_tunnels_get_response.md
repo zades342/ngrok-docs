@@ -2,17 +2,18 @@
 #### Example Response
 ```json
 {
-  "id": "tn_2IEh2Ct5kbiKk43jk9sKmfQ3YIc",
-  "public_url": "://:0",
-  "started_at": "2022-11-29T20:07:20Z",
+  "id": "tn_2MkS9cZQ3kqndoWgpfc3J3WwnNk",
+  "public_url": "https://b8c3b89c6cc0.ngrok.paid",
+  "started_at": "2023-03-08T21:12:16Z",
+  "proto": "https",
   "region": "us",
   "tunnel_session": {
-    "id": "ts_2IEh2CyJ6rUARkhcLL3PJRdJp43",
-    "uri": "https://api.ngrok.com/tunnel_sessions/ts_2IEh2CyJ6rUARkhcLL3PJRdJp43"
+    "id": "ts_2MkS9ebETiC6Zle3OEDpxLG9RZw",
+    "uri": "https://api.ngrok.com/tunnel_sessions/ts_2MkS9ebETiC6Zle3OEDpxLG9RZw"
   },
-  "labels": {
-    "baz": "qux",
-    "foo": "bar"
+  "endpoint": {
+    "id": "ep_2MkS9cZQ3kqndoWgpfc3J3WwnNk",
+    "uri": "https://api.ngrok.com/endpoints/ep_2MkS9cZQ3kqndoWgpfc3J3WwnNk"
   },
   "forwards_to": "http://localhost:80"
 }
