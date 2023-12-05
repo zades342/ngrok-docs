@@ -35,7 +35,6 @@ const config = {
 
 	plugins: [
 		"./src/plugins/ngrok-parse-integrations",
-		"@stackql/docusaurus-plugin-hubspot",
 		"@docusaurus/theme-mermaid",
 		"./src/plugins/tailwindcss",
 	],
