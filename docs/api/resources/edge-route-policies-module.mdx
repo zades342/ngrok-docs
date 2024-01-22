@@ -1,0 +1,117 @@
+import EdgeRoutePoliciesModuleReplaceRequest from "./examples/_edge_route_policies_module_replace_request.md";
+import EdgeRoutePoliciesModuleReplaceResponse from "./examples/_edge_route_policies_module_replace_response.md";
+import EdgeRoutePoliciesModuleGetRequest from "./examples/_edge_route_policies_module_get_request.md";
+import EdgeRoutePoliciesModuleGetResponse from "./examples/_edge_route_policies_module_get_response.md";
+import EdgeRoutePoliciesModuleDeleteRequest from "./examples/_edge_route_policies_module_delete_request.md";
+import EdgeRoutePoliciesModuleDeleteResponse from "./examples/_edge_route_policies_module_delete_response.md";
+
+# Edge Route Policies Module
+
+## Replace HTTPS Edge Route Policies Module
+
+### Request
+
+PUT /edges/https/\{edge_id\}/routes/\{id\}/policies
+
+<EdgeRoutePoliciesModuleReplaceRequest />
+
+#### Parameters
+
+| Name       | Type                                         | Description |
+| ---------- | -------------------------------------------- | ----------- |
+| `enabled`  | boolean                                      |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-parameters) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-parameters) |             |
+
+#### EndpointPolicy parameters
+
+| Name          | Type                                         | Description |
+| ------------- | -------------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                           |             |
+| `actions`     | [EndpointAction](#endpointaction-parameters) |             |
+| `name`        | string                                       |             |
+
+#### EndpointAction parameters
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+### Response
+
+Returns a 200 response on success
+
+<EdgeRoutePoliciesModuleReplaceResponse />
+
+#### Fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+## Get HTTPS Edge Route Policies Module
+
+### Request
+
+GET /edges/https/\{edge_id\}/routes/\{id\}/policies
+
+<EdgeRoutePoliciesModuleGetRequest />
+
+### Response
+
+Returns a 200 response on success
+
+<EdgeRoutePoliciesModuleGetResponse />
+
+#### Fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+## Delete HTTPS Edge Route Policies Module
+
+### Request
+
+DELETE /edges/https/\{edge_id\}/routes/\{id\}/policies
+
+<EdgeRoutePoliciesModuleDeleteRequest />
+
+### Response
+
+Returns a 204 response with no body on success

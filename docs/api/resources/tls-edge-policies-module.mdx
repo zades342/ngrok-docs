@@ -1,0 +1,117 @@
+import TLSEdgePoliciesModuleReplaceRequest from "./examples/_tls_edge_policies_module_replace_request.md";
+import TLSEdgePoliciesModuleReplaceResponse from "./examples/_tls_edge_policies_module_replace_response.md";
+import TLSEdgePoliciesModuleGetRequest from "./examples/_tls_edge_policies_module_get_request.md";
+import TLSEdgePoliciesModuleGetResponse from "./examples/_tls_edge_policies_module_get_response.md";
+import TLSEdgePoliciesModuleDeleteRequest from "./examples/_tls_edge_policies_module_delete_request.md";
+import TLSEdgePoliciesModuleDeleteResponse from "./examples/_tls_edge_policies_module_delete_response.md";
+
+# TLS Edge Policies Module
+
+## Replace TLS Edge Policy Module
+
+### Request
+
+PUT /edges/tls/\{id\}/policies
+
+<TLSEdgePoliciesModuleReplaceRequest />
+
+#### Parameters
+
+| Name       | Type                                         | Description |
+| ---------- | -------------------------------------------- | ----------- |
+| `enabled`  | boolean                                      |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-parameters) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-parameters) |             |
+
+#### EndpointPolicy parameters
+
+| Name          | Type                                         | Description |
+| ------------- | -------------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                           |             |
+| `actions`     | [EndpointAction](#endpointaction-parameters) |             |
+| `name`        | string                                       |             |
+
+#### EndpointAction parameters
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+### Response
+
+Returns a 200 response on success
+
+<TLSEdgePoliciesModuleReplaceResponse />
+
+#### Fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+## Get TLS Edge Policy Module
+
+### Request
+
+GET /edges/tls/\{id\}/policies
+
+<TLSEdgePoliciesModuleGetRequest />
+
+### Response
+
+Returns a 200 response on success
+
+<TLSEdgePoliciesModuleGetResponse />
+
+#### Fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+## Delete TLS Edge Policy Module
+
+### Request
+
+DELETE /edges/tls/\{id\}/policies
+
+<TLSEdgePoliciesModuleDeleteRequest />
+
+### Response
+
+Returns a 204 response with no body on success

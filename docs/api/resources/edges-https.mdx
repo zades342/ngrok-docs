@@ -112,6 +112,7 @@ Returns a 201 response on success
 | `websocket_tcp_converter` | [EndpointWebsocketTCPConverter](#endpointwebsockettcpconverter-fields) | websocket to tcp adapter configuration or `null`                                        |
 | `user_agent_filter`       | [EndpointUserAgentFilter](#endpointuseragentfilter-fields)             |                                                                                         |
 | `jwt_validation`          | [EndpointJWTValidation](#endpointjwtvalidation-fields)                 | jwt validation module configuration or `null`                                           |
+| `policies`                | [EndpointPolicies](#endpointpolicies-fields)                           | policies module configuration or `null`                                                 |
 
 #### EndpointBackend fields
 
@@ -390,6 +391,29 @@ Returns a 201 response on success
 | Name              | Type               | Description                                                            |
 | ----------------- | ------------------ | ---------------------------------------------------------------------- |
 | `additional_jkus` | List&lt;string&gt; | the list of URLs which serve the possible signing keys in JWKS format. |
+
+#### EndpointPolicies fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
 
 ## Get HTTPS Edge
 
@@ -468,6 +492,7 @@ Returns a 200 response on success
 | `websocket_tcp_converter` | [EndpointWebsocketTCPConverter](#endpointwebsockettcpconverter-fields) | websocket to tcp adapter configuration or `null`                                        |
 | `user_agent_filter`       | [EndpointUserAgentFilter](#endpointuseragentfilter-fields)             |                                                                                         |
 | `jwt_validation`          | [EndpointJWTValidation](#endpointjwtvalidation-fields)                 | jwt validation module configuration or `null`                                           |
+| `policies`                | [EndpointPolicies](#endpointpolicies-fields)                           | policies module configuration or `null`                                                 |
 
 #### EndpointBackend fields
 
@@ -746,6 +771,29 @@ Returns a 200 response on success
 | Name              | Type               | Description                                                            |
 | ----------------- | ------------------ | ---------------------------------------------------------------------- |
 | `additional_jkus` | List&lt;string&gt; | the list of URLs which serve the possible signing keys in JWKS format. |
+
+#### EndpointPolicies fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
 
 ## List HTTPS Edges
 
@@ -832,6 +880,7 @@ Returns a 200 response on success
 | `websocket_tcp_converter` | [EndpointWebsocketTCPConverter](#endpointwebsockettcpconverter-fields) | websocket to tcp adapter configuration or `null`                                        |
 | `user_agent_filter`       | [EndpointUserAgentFilter](#endpointuseragentfilter-fields)             |                                                                                         |
 | `jwt_validation`          | [EndpointJWTValidation](#endpointjwtvalidation-fields)                 | jwt validation module configuration or `null`                                           |
+| `policies`                | [EndpointPolicies](#endpointpolicies-fields)                           | policies module configuration or `null`                                                 |
 
 #### EndpointBackend fields
 
@@ -1110,6 +1159,29 @@ Returns a 200 response on success
 | Name              | Type               | Description                                                            |
 | ----------------- | ------------------ | ---------------------------------------------------------------------- |
 | `additional_jkus` | List&lt;string&gt; | the list of URLs which serve the possible signing keys in JWKS format. |
+
+#### EndpointPolicies fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
 
 ## Update HTTPS Edge
 
@@ -1213,6 +1285,7 @@ Returns a 200 response on success
 | `websocket_tcp_converter` | [EndpointWebsocketTCPConverter](#endpointwebsockettcpconverter-fields) | websocket to tcp adapter configuration or `null`                                        |
 | `user_agent_filter`       | [EndpointUserAgentFilter](#endpointuseragentfilter-fields)             |                                                                                         |
 | `jwt_validation`          | [EndpointJWTValidation](#endpointjwtvalidation-fields)                 | jwt validation module configuration or `null`                                           |
+| `policies`                | [EndpointPolicies](#endpointpolicies-fields)                           | policies module configuration or `null`                                                 |
 
 #### EndpointBackend fields
 
@@ -1491,6 +1564,29 @@ Returns a 200 response on success
 | Name              | Type               | Description                                                            |
 | ----------------- | ------------------ | ---------------------------------------------------------------------- |
 | `additional_jkus` | List&lt;string&gt; | the list of URLs which serve the possible signing keys in JWKS format. |
+
+#### EndpointPolicies fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
 
 ## Delete HTTPS Edge
 

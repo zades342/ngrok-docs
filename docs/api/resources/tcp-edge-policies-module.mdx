@@ -1,0 +1,117 @@
+import TCPEdgePoliciesModuleReplaceRequest from "./examples/_tcp_edge_policies_module_replace_request.md";
+import TCPEdgePoliciesModuleReplaceResponse from "./examples/_tcp_edge_policies_module_replace_response.md";
+import TCPEdgePoliciesModuleGetRequest from "./examples/_tcp_edge_policies_module_get_request.md";
+import TCPEdgePoliciesModuleGetResponse from "./examples/_tcp_edge_policies_module_get_response.md";
+import TCPEdgePoliciesModuleDeleteRequest from "./examples/_tcp_edge_policies_module_delete_request.md";
+import TCPEdgePoliciesModuleDeleteResponse from "./examples/_tcp_edge_policies_module_delete_response.md";
+
+# Tcp Edge Policies Module
+
+## Replace TCP Edge Policy Module
+
+### Request
+
+PUT /edges/tcp/\{id\}/policies
+
+<TCPEdgePoliciesModuleReplaceRequest />
+
+#### Parameters
+
+| Name       | Type                                         | Description |
+| ---------- | -------------------------------------------- | ----------- |
+| `enabled`  | boolean                                      |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-parameters) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-parameters) |             |
+
+#### EndpointPolicy parameters
+
+| Name          | Type                                         | Description |
+| ------------- | -------------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                           |             |
+| `actions`     | [EndpointAction](#endpointaction-parameters) |             |
+| `name`        | string                                       |             |
+
+#### EndpointAction parameters
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+### Response
+
+Returns a 200 response on success
+
+<TCPEdgePoliciesModuleReplaceResponse />
+
+#### Fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+## Get TCP Edge Policy Module
+
+### Request
+
+GET /edges/tcp/\{id\}/policies
+
+<TCPEdgePoliciesModuleGetRequest />
+
+### Response
+
+Returns a 200 response on success
+
+<TCPEdgePoliciesModuleGetResponse />
+
+#### Fields
+
+| Name       | Type                                     | Description |
+| ---------- | ---------------------------------------- | ----------- |
+| `enabled`  | boolean                                  |             |
+| `inbound`  | [EndpointPolicy](#endpointpolicy-fields) |             |
+| `outbound` | [EndpointPolicy](#endpointpolicy-fields) |             |
+
+#### EndpointPolicy fields
+
+| Name          | Type                                     | Description |
+| ------------- | ---------------------------------------- | ----------- |
+| `expressions` | List&lt;string&gt;                       |             |
+| `actions`     | [EndpointAction](#endpointaction-fields) |             |
+| `name`        | string                                   |             |
+
+#### EndpointAction fields
+
+| Name     | Type   | Description |
+| -------- | ------ | ----------- |
+| `type`   | string |             |
+| `config` | object |             |
+
+## Delete TCP Edge Policy Module
+
+### Request
+
+DELETE /edges/tcp/\{id\}/policies
+
+<TCPEdgePoliciesModuleDeleteRequest />
+
+### Response
+
+Returns a 204 response with no body on success

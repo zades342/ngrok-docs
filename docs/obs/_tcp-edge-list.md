@@ -14,5 +14,14 @@
 | enabled       | boolean            | `true` if the module will be applied to traffic, `false` to disable. default `true` if unspecified |
 | id            | string             | a resource identifier                                                                              |
 | uri           | string             | a uri for locating a resource                                                                      |
+| enabled       | boolean            |                                                                                                    |
+| expressions   | List&lt;string&gt; |                                                                                                    |
+| type          | string             |                                                                                                    |
+| config        | object             |                                                                                                    |
+| name          | string             |                                                                                                    |
+| expressions   | List&lt;string&gt; |                                                                                                    |
+| type          | string             |                                                                                                    |
+| config        | object             |                                                                                                    |
+| name          | string             |                                                                                                    |
 | uri           | string             | URI of the TCP Edge list API resource                                                              |
 | next_page_uri | string             | URI of the next page, or null if there is no next page                                             |

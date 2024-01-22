@@ -4,15 +4,15 @@
 
 ```json
 {
-	"id": "ipx_2arwbQHJqoeKiUT1ubGEQ9Hkxf3",
-	"uri": "https://api.ngrok.com/ip_restrictions/ipx_2arwbQHJqoeKiUT1ubGEQ9Hkxf3",
-	"created_at": "2024-01-12T20:07:56Z",
+	"id": "ipx_2bIPiAxzrJNFvCNhAs1WefP9xv4",
+	"uri": "https://api.ngrok.com/ip_restrictions/ipx_2bIPiAxzrJNFvCNhAs1WefP9xv4",
+	"created_at": "2024-01-22T05:02:24Z",
 	"enforced": false,
 	"type": "dashboard",
 	"ip_policies": [
 		{
-			"id": "ipp_2arwbR2MN2ZBcxj6VjRyepVpxpJ",
-			"uri": "https://api.ngrok.com/ip_policies/ipp_2arwbR2MN2ZBcxj6VjRyepVpxpJ"
+			"id": "ipp_2bIPiBrxMZF3v7QenjfkWHRf7tH",
+			"uri": "https://api.ngrok.com/ip_policies/ipp_2bIPiBrxMZF3v7QenjfkWHRf7tH"
 		}
 	]
 }

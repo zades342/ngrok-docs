@@ -2316,6 +2316,22 @@
     </tr>
     <tr>
       <td>
+        <a id="ERR_NGROK_726" href="/docs/errors/err_ngrok_726">ERR_NGROK_726</a>
+      </td>
+      <td class="pre-wrapped">
+        This ngrok account has reached its connections limit for the month. Please log into https://dashboard.ngrok.com to view your options.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_727" href="/docs/errors/err_ngrok_727">ERR_NGROK_727</a>
+      </td>
+      <td class="pre-wrapped">
+        This ngrok account has reached its http requests limit for the month. Please log into https://dashboard.ngrok.com to view your options.
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a id="ERR_NGROK_800" href="/docs/errors/err_ngrok_800">ERR_NGROK_800</a>
       </td>
       <td class="pre-wrapped">

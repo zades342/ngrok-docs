@@ -6,9 +6,9 @@
 {
 	"event_destinations": [
 		{
-			"id": "ed_2arwbTWWrbJBXVOF7LiQCSZgsdv",
+			"id": "ed_2bIPiCIyPfWqLhq5Jm4NDdJSMXq",
 			"metadata": "{\"environment\":\"dev\"}",
-			"created_at": "2024-01-12T20:07:56Z",
+			"created_at": "2024-01-22T05:02:24Z",
 			"description": "kinesis dev stream",
 			"format": "json",
 			"target": {
@@ -25,7 +25,7 @@
 				"cloudwatch_logs": null,
 				"datadog": null
 			},
-			"uri": "https://api.ngrok.com/event_destinations/ed_2arwbTWWrbJBXVOF7LiQCSZgsdv"
+			"uri": "https://api.ngrok.com/event_destinations/ed_2bIPiCIyPfWqLhq5Jm4NDdJSMXq"
 		}
 	],
 	"uri": "https://api.ngrok.com/event_destinations",

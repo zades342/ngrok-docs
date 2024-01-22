@@ -14,3 +14,12 @@
 | enabled     | boolean            | `true` if the module will be applied to traffic, `false` to disable. default `true` if unspecified |
 | id          | string             | a resource identifier                                                                              |
 | uri         | string             | a uri for locating a resource                                                                      |
+| enabled     | boolean            |                                                                                                    |
+| expressions | List&lt;string&gt; |                                                                                                    |
+| type        | string             |                                                                                                    |
+| config      | object             |                                                                                                    |
+| name        | string             |                                                                                                    |
+| expressions | List&lt;string&gt; |                                                                                                    |
+| type        | string             |                                                                                                    |
+| config      | object             |                                                                                                    |
+| name        | string             |                                                                                                    |

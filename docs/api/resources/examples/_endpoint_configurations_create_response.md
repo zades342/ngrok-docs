@@ -4,11 +4,11 @@
 
 ```json
 {
-	"id": "ec_2arwYdi4DJfzA25qUxH6SayrJIt",
+	"id": "ec_2bIPfSJp0LXCFyMgF0xCMBKFWtt",
 	"type": "https",
 	"description": "app servers",
-	"created_at": "2024-01-12T20:07:34Z",
-	"uri": "https://api.ngrok.com/endpoint_configurations/ec_2arwYdi4DJfzA25qUxH6SayrJIt",
+	"created_at": "2024-01-22T05:02:02Z",
+	"uri": "https://api.ngrok.com/endpoint_configurations/ec_2bIPfSJp0LXCFyMgF0xCMBKFWtt",
 	"basic_auth": null,
 	"circuit_breaker": null,
 	"compression": null,
