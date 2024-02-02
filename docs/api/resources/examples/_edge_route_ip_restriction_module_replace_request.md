@@ -8,6 +8,6 @@ curl \
 -H "Authorization: Bearer {API_KEY}" \
 -H "Content-Type: application/json" \
 -H "Ngrok-Version: 2" \
--d '{"enabled":true,"ip_policy_ids":["ipp_2bMmX3t8sdLfVrDFEcoso7mmZZv","ipp_2bMmX0rMN9edmQgwdg48J7tKKXu"]}' \
-https://api.ngrok.com/edges/https/edghts_2bMmWxjhNLp9qUINQV9e1VFBWwm/routes/edghtsrt_2bMmX0FlPY4GsB45He584amiMeY/ip_restriction
+-d '{"enabled":true,"ip_policy_ids":["ipp_2bomO8XfAeid1WQprsnZxMT3Dpm","ipp_2bomO9ZCfAnLCiCL8ZJUV75UBfd"]}' \
+https://api.ngrok.com/edges/https/edghts_2bomO9v1FZjwCX5gvYS9yKSJ5Tt/routes/edghtsrt_2bomO61qudEcO7SD610vdB3a1Rn/ip_restriction
 ```

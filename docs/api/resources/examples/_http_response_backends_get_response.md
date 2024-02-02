@@ -4,15 +4,15 @@
 
 ```json
 {
-	"id": "bkdhr_2bMmWiYZ7Z2DgZ2pAffOl3I58RR",
-	"uri": "https://api.ngrok.com/backends/http_response/bkdhr_2bMmWiYZ7Z2DgZ2pAffOl3I58RR",
-	"created_at": "2024-01-23T18:09:15Z",
-	"description": "acme http response",
-	"metadata": "{\"environment\": \"staging\"}",
 	"body": "I'm a teapot",
+	"created_at": "2024-02-02T16:02:48Z",
+	"description": "acme http response",
 	"headers": {
 		"content-type": "text/plain"
 	},
-	"status_code": 418
+	"id": "bkdhr_2bomNsezkhxJSW7QSs8aRVqmXjN",
+	"metadata": "{\"environment\": \"staging\"}",
+	"status_code": 418,
+	"uri": "https://api.ngrok.com/backends/http_response/bkdhr_2bomNsezkhxJSW7QSs8aRVqmXjN"
 }
 ```

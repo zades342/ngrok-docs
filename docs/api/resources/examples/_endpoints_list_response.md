@@ -6,37 +6,37 @@
 {
 	"endpoints": [
 		{
-			"id": "ep_2bMmW1Wdhf2nNGXxbwAbzcCp1YN",
-			"created_at": "2024-01-23T18:09:09Z",
-			"updated_at": "2024-01-23T18:09:09Z",
-			"public_url": "https://990a069c654e.ngrok.paid",
+			"created_at": "2024-02-02T16:02:45Z",
+			"hostport": "6adf4f4ed539.ngrok.paid:443",
+			"id": "ep_2bomNStZawINwYR2vDM90xMFYos",
 			"proto": "https",
-			"hostport": "990a069c654e.ngrok.paid:443",
-			"type": "ephemeral",
+			"public_url": "https://6adf4f4ed539.ngrok.paid",
 			"tunnel": {
-				"id": "tn_2bMmW1Wdhf2nNGXxbwAbzcCp1YN",
-				"uri": "https://api.ngrok.com/tunnels/tn_2bMmW1Wdhf2nNGXxbwAbzcCp1YN"
-			}
+				"id": "tn_2bomNStZawINwYR2vDM90xMFYos",
+				"uri": "https://api.ngrok.com/tunnels/tn_2bomNStZawINwYR2vDM90xMFYos"
+			},
+			"type": "ephemeral",
+			"updated_at": "2024-02-02T16:02:45Z"
 		},
 		{
-			"id": "ep_2bMmVwiySjHyqkEtMZXEAFXRRgg",
-			"created_at": "2024-01-23T18:09:08Z",
-			"updated_at": "2024-01-23T18:09:08Z",
-			"public_url": "tls://endpoint-example.com",
-			"proto": "tls",
-			"hostport": "endpoint-example.com:443",
-			"type": "edge",
+			"created_at": "2024-02-02T16:02:42Z",
 			"domain": {
-				"id": "rd_2bMmVwtIDSBwBKb3FEO3djw5m4F",
-				"uri": "https://api.ngrok.com/reserved_domains/rd_2bMmVwtIDSBwBKb3FEO3djw5m4F"
+				"id": "rd_2bomMyBce0fBNMALtUkgxrK4N0R",
+				"uri": "https://api.ngrok.com/reserved_domains/rd_2bomMyBce0fBNMALtUkgxrK4N0R"
 			},
 			"edge": {
-				"id": "edgtls_2bMmVx2LA0cLZy0UhlOc6BdPv5h",
-				"uri": "https://api.ngrok.com/edges/tls/edgtls_2bMmVx2LA0cLZy0UhlOc6BdPv5h"
-			}
+				"id": "edgtls_2bomN1NbIg1cZs1VugmImD4uFNX",
+				"uri": "https://api.ngrok.com/edges/tls/edgtls_2bomN1NbIg1cZs1VugmImD4uFNX"
+			},
+			"hostport": "endpoint-example2.com:443",
+			"id": "ep_2bomN4LoxUqMwCy3IT91GuIfEMh",
+			"proto": "tls",
+			"public_url": "tls://endpoint-example2.com",
+			"type": "edge",
+			"updated_at": "2024-02-02T16:02:42Z"
 		}
 	],
-	"uri": "https://api.ngrok.com/endpoints",
-	"next_page_uri": null
+	"next_page_uri": null,
+	"uri": "https://api.ngrok.com/endpoints"
 }
 ```
