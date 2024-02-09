@@ -8,6 +8,6 @@ curl \
 -H "Authorization: Bearer {API_KEY}" \
 -H "Content-Type: application/json" \
 -H "Ngrok-Version: 2" \
--d '{"enabled":true,"certificate_authority_ids":["ca_2bMmXZkvTDnflcJnthzBWWCTu1w"]}' \
-https://api.ngrok.com/edges/https/edghts_2bMmXWnREjUSYyjnRacdO5tDHij/mutual_tls
+-d '{"certificate_authority_ids":["ca_2c6iK1PzZBYaEhroX83B1MkY6r1"],"enabled":true}' \
+https://api.ngrok.com/edges/https/edghts_2c6iK59eQVeMji9pvKgxwLPtqkg/mutual_tls
 ```

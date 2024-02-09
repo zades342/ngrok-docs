@@ -169,7 +169,7 @@
         <a id="ERR_NGROK_121" href="/docs/errors/err_ngrok_121">ERR_NGROK_121</a>
       </td>
       <td class="pre-wrapped">
-        Your <code>&lt;PRODUCT&gt;</code> version "<code>&lt;VERSION&gt;</code>" is too old. The minimum supported agent version for your account is "<code>&lt;MINVERSION&gt;</code>". Please update to a newer version with `ngrok update`, by downloading from <a href="https://ngrok.com/download">https://ngrok.com/download</a>, or by updating your SDK version.
+        Your <code>&lt;PRODUCT&gt;</code> version "<code>&lt;VERSION&gt;</code>" is too old. The minimum supported agent version for your account is "<code>&lt;MINVERSION&gt;</code>". Please update to a newer version with `ngrok update`, by downloading from <a href="https://ngrok.com/download">https://ngrok.com/download</a>, or by updating your SDK version. Paid accounts are currently excluded from minimum agent version requirements. To begin handling traffic immediately without updating your agent, upgrade to a paid plan: <a href="https://dashboard.ngrok.com/billing/subscription">https://dashboard.ngrok.com/billing/subscription</a>.
       </td>
     </tr>
     <tr>
@@ -2327,7 +2327,31 @@
         <a id="ERR_NGROK_727" href="/docs/errors/err_ngrok_727">ERR_NGROK_727</a>
       </td>
       <td class="pre-wrapped">
-        This ngrok account has reached its http requests limit for the month. Please log into https://dashboard.ngrok.com to view your options.
+        This ngrok account has reached its HTTP requests limit for the month. Please log into https://dashboard.ngrok.com to view your options.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_728" href="/docs/errors/err_ngrok_728">ERR_NGROK_728</a>
+      </td>
+      <td class="pre-wrapped">
+        This ngrok account has reached its HTTP connections limit for the month. Please log into https://dashboard.ngrok.com to view your options.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_729" href="/docs/errors/err_ngrok_729">ERR_NGROK_729</a>
+      </td>
+      <td class="pre-wrapped">
+        This ngrok account has reached its TCP connections limit for the month. Please log into https://dashboard.ngrok.com to view your options.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_730" href="/docs/errors/err_ngrok_730">ERR_NGROK_730</a>
+      </td>
+      <td class="pre-wrapped">
+        This ngrok account has reached its TLS connections limit for the month. Please log into https://dashboard.ngrok.com to view your options.
       </td>
     </tr>
     <tr>
@@ -4559,50 +4583,68 @@
     </tr>
     <tr>
       <td>
-        <a id="ERR_NGROK_2091" href="/docs/errors/err_ngrok_2091">ERR_NGROK_2091</a>
+        <a id="ERR_NGROK_2200" href="/docs/errors/err_ngrok_2200">ERR_NGROK_2200</a>
       </td>
       <td class="pre-wrapped">
-        Unknown policy action type specified: <code>&lt;TYP&gt;</code>.
+        Invalid policy expression.
+        <code>&lt;ERR&gt;</code>.
       </td>
     </tr>
     <tr>
       <td>
-        <a id="ERR_NGROK_2092" href="/docs/errors/err_ngrok_2092">ERR_NGROK_2092</a>
+        <a id="ERR_NGROK_2201" href="/docs/errors/err_ngrok_2201">ERR_NGROK_2201</a>
       </td>
       <td class="pre-wrapped">
-        Failed to parse the configuration specified for action type <code>&lt;TYP&gt;</code>.
+        Invalid policy action type <code>&lt;TYP&gt;</code>.
       </td>
     </tr>
     <tr>
       <td>
-        <a id="ERR_NGROK_2093" href="/docs/errors/err_ngrok_2093">ERR_NGROK_2093</a>
+        <a id="ERR_NGROK_2202" href="/docs/errors/err_ngrok_2202">ERR_NGROK_2202</a>
       </td>
       <td class="pre-wrapped">
-        Policy action type <code>&lt;TYP&gt;</code> does not support the specified protocol: <code>&lt;PROTO&gt;</code>.
+        Action type <code>&lt;TYP&gt;</code> is not supported for <code>&lt;DIRECTION&gt;</code> traffic policy rule.
       </td>
     </tr>
     <tr>
       <td>
-        <a id="ERR_NGROK_2094" href="/docs/errors/err_ngrok_2094">ERR_NGROK_2094</a>
+        <a id="ERR_NGROK_2203" href="/docs/errors/err_ngrok_2203">ERR_NGROK_2203</a>
       </td>
       <td class="pre-wrapped">
-        Failed to provision action type <code>&lt;TYP&gt;</code> for unknown protocol <code>&lt;PROTO&gt;</code>.
+        Failed to parse the configuration for policy action type <code>&lt;TYP&gt;</code>.
+        <code>&lt;ERR&gt;</code>
       </td>
     </tr>
     <tr>
       <td>
-        <a id="ERR_NGROK_2095" href="/docs/errors/err_ngrok_2095">ERR_NGROK_2095</a>
+        <a id="ERR_NGROK_2204" href="/docs/errors/err_ngrok_2204">ERR_NGROK_2204</a>
       </td>
       <td class="pre-wrapped">
-        Configuration for policy action type <code>&lt;TYP&gt;</code> has invalid <code>&lt;FIELD&gt;</code>.
+        Configuration for policy action type <code>&lt;TYP&gt;</code> has invalid <code>&lt;FIELD&gt;</code> value.
       </td>
     </tr>
     <tr>
       <td>
-        <a id="ERR_NGROK_2097" href="/docs/errors/err_ngrok_2097">ERR_NGROK_2097</a>
+        <a id="ERR_NGROK_2205" href="/docs/errors/err_ngrok_2205">ERR_NGROK_2205</a>
       </td>
       <td class="pre-wrapped">
-        Policy action type <code>&lt;TYP&gt;</code> is not supported on <code>&lt;DIRECTION&gt;</code> policies.
+        Policy action type <code>&lt;TYP&gt;</code> does not support the <code>&lt;PROTO&gt;</code> protocol.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_2206" href="/docs/errors/err_ngrok_2206">ERR_NGROK_2206</a>
+      </td>
+      <td class="pre-wrapped">
+        A policy must define at least one action.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_2207" href="/docs/errors/err_ngrok_2207">ERR_NGROK_2207</a>
+      </td>
+      <td class="pre-wrapped">
+        Policy action type <code>&lt;TYP&gt;</code> is unreachable due to a prior terminating action.
       </td>
     </tr>
     <tr>
@@ -5468,6 +5510,14 @@
       </td>
       <td class="pre-wrapped">
         The domain of the email entered is registered under a domain control and must signup via SSO
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_4117" href="/docs/errors/err_ngrok_4117">ERR_NGROK_4117</a>
+      </td>
+      <td class="pre-wrapped">
+        The email address <code>&lt;EMAIL&gt;</code> already exists under a similar alias. Please use that email address to login.
       </td>
     </tr>
     <tr>

@@ -6,18 +6,18 @@
 {
 	"https_edges": [
 		{
-			"id": "edghts_2bMmWnRC8dReqX4DHQs4rLYar2X",
+			"created_at": "2024-02-09T00:25:56Z",
 			"description": "acme https edge",
-			"metadata": "{\"environment\": \"staging\"}",
-			"created_at": "2024-01-23T18:09:15Z",
-			"uri": "https://api.ngrok.com/edges/https/edghts_2bMmWnRC8dReqX4DHQs4rLYar2X",
 			"hostports": ["example.com:443"],
+			"id": "edghts_2c6iJQx0J6JWquTASn78Wc3gsyk",
+			"metadata": "{\"environment\": \"staging\"}",
 			"mutual_tls": null,
+			"routes": [],
 			"tls_termination": null,
-			"routes": []
+			"uri": "https://api.ngrok.com/edges/https/edghts_2c6iJQx0J6JWquTASn78Wc3gsyk"
 		}
 	],
-	"uri": "https://api.ngrok.com/edges/https",
-	"next_page_uri": null
+	"next_page_uri": null,
+	"uri": "https://api.ngrok.com/edges/https"
 }
 ```
