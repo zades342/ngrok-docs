@@ -66,9 +66,9 @@
 				{
 					"config": {
 						"metadata": {
-							"edgeId": "edghts_2cSjzGIJqwwSDfDOKhRXHToV7Rv",
+							"edgeId": "edghts_2cT4TkjpnjLRgwboZJl1HgZ2j2n",
 							"message": "Unsuccessful response",
-							"routeId": "edghtsrt_2cSjzMefwVMUDcy95OaRhdhhGyF"
+							"routeId": "edghtsrt_2cT4TlFixiZODzDTTbGuyoeCVoj"
 						}
 					},
 					"type": "log"
