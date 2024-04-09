@@ -14,18 +14,18 @@ The Custom Response policy action returns a hard-coded response back to the clie
 
 ## Behavior
 
-When executed as an inbound policy, this action bypasses the upstream server and immediately returns to the caller with
-the configured response. When executed as an outbound policy, the response from the upstream server is overwritten with the
+When executed in the `on_http_request` phase, this action bypasses the upstream server and immediately returns to the caller with
+the configured response. When executed in the `on_http_response` phase, the response from the upstream server is overwritten with the
 configured response.
 
 If this action is executed, no further actions in the traffic policy will be executed.
 
 ## Reference
 
-### Supported Directions
+### Supported Phases
 
-- Inbound
-- Outbound
+- `on_http_request`
+- `on_http_response`
 
 ### Configuration
 
