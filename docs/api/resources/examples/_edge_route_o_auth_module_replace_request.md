@@ -9,5 +9,5 @@ curl \
 -H "Content-Type: application/json" \
 -H "Ngrok-Version: 2" \
 -d '{"enabled":true,"provider":{"google":{"client_id":"client-id","client_secret":"client-secret","email_addresses":["alan@example.com"],"scopes":["profile","email","https://www.googleapis.com/auth/userinfo.email"]}}}' \
-https://api.ngrok.com/edges/https/edghts_2gsqMWn9EWnyzB8HOiL5Xm9cMmf/routes/edghtsrt_2gsqMSVVZ5lmU8KUaqPKUamGw6c/oauth
+https://api.ngrok.com/edges/https/edghts_2h9aEnRUUcqZiSEPab0Elc7qtHW/routes/edghtsrt_2h9aErKNzKvnfpM54Ui4nQmsB35/oauth
 ```

@@ -23,7 +23,7 @@
 					"type": "url-rewrite"
 				}
 			],
-			"expressions": ["req.url.contains('v0/')"],
+			"expressions": ["req.URL.contains('v0/')"],
 			"name": "Rewrite v0 API Calls to v1."
 		},
 		{
@@ -40,8 +40,8 @@
 				}
 			],
 			"expressions": [
-				"req.method == 'POST' && req.content_length > 10000",
-				"conn.geo.country_code in ['BR', 'CN', 'CU', 'IR', 'NG', 'RO', 'RU', 'SD', 'SY', 'UA']"
+				"req.Method == 'POST' && req.ContentLength > 10000",
+				"conn.Geo.CountryCode in ['BR', 'CN', 'CU', 'IR', 'NG', 'RO', 'RU', 'SD', 'SY', 'UA']"
 			],
 			"name": "Block POST Requests With Large Content Length From Specific Countries"
 		},
@@ -55,7 +55,7 @@
 				}
 			],
 			"expressions": [
-				"'ChatGPT' in req.headers['user-agent'] || 'GPTBot' in req.headers['user-agent']"
+				"'ChatGPT' in req.Headers['User-Agent'] || 'GPTBot' in req.Headers['User-Agent']"
 			],
 			"name": "Block AI Crawler Bots"
 		}
@@ -66,15 +66,15 @@
 				{
 					"config": {
 						"metadata": {
-							"edgeId": "edghts_2gsqMYVELQPRqeftCFD90tFDmmr",
+							"edgeId": "edghts_2h9aEmakDqFODogl0PefIgomkCd",
 							"message": "Unsuccessful response",
-							"routeId": "edghtsrt_2gsqMdo9SaEpqd9ly017PecEZIY"
+							"routeId": "edghtsrt_2h9aEmNgCO7ElQqWmxINzLtja34"
 						}
 					},
 					"type": "log"
 				}
 			],
-			"expressions": ["res.status_code < 200 || res.status_code > 300"],
+			"expressions": ["res.StatusCode < '200' || res.StatusCode > '300'"],
 			"name": "Log Unsuccessful Response"
 		}
 	]
