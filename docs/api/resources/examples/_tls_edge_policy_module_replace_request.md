@@ -8,6 +8,6 @@ curl \
 -H "Authorization: Bearer {API_KEY}" \
 -H "Content-Type: application/json" \
 -H "Ngrok-Version: 2" \
--d '{"enabled":true,"inbound":[{"actions":[{"config":{"metadata":{"edgeId":"edgtls_2hrGzbGeGrBJt43Myxmkxp3YVTn","message":"Invalid TLS Version"}},"type":"log"},{"type":"deny"}],"expressions":["conn.tls.version.contains('1.3')"],"name":"AllowTLS1.3"}]}' \
-https://api.ngrok.com/edges/tls/edgtls_2hrGzbGeGrBJt43Myxmkxp3YVTn/policy
+-d '{"enabled":true,"inbound":[{"actions":[{"config":{"metadata":{"edgeId":"edgtls_2j6lu2Tw5l4RHRCIOOKXJubxWcB","message":"Invalid TLS Version"}},"type":"log"},{"type":"deny"}],"expressions":["conn.tls.version.contains('1.3')"],"name":"AllowTLS1.3"}]}' \
+https://api.ngrok.com/edges/tls/edgtls_2j6lu2Tw5l4RHRCIOOKXJubxWcB/policy
 ```

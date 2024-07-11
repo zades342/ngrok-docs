@@ -9,7 +9,6 @@
 		{
 			"actions": [
 				{
-					"config": null,
 					"type": "deny"
 				}
 			],

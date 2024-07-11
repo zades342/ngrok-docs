@@ -77,8 +77,8 @@
       </td>
       <td class="pre-wrapped">
         Your account is limited to <code>&lt;MAX&gt;</code> simultaneous ngrok agent sessions.
-        You can run multiple tunnels on a single agent session using a configuration file.
-        To learn more, see <a href="https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config">https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config</a>/
+        You can run multiple simultaneous tunnels from a single agent session by defining the tunnels in your agent configuration file and starting them with the command `ngrok start --all`.
+        Read more about the agent configuration file: <a href="https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config">https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config</a>
         You can view your current agent sessions in the dashboard:
         <a href="https://dashboard.ngrok.com/tunnels/agents">https://dashboard.ngrok.com/tunnels/agents</a>
       </td>
@@ -1831,6 +1831,14 @@
     </tr>
     <tr>
       <td>
+        <a id="ERR_NGROK_457" href="/docs/errors/err_ngrok_457">ERR_NGROK_457</a>
+      </td>
+      <td class="pre-wrapped">
+        Custom error template URLs are limited to <code>&lt;MAX&gt;</code> characters; you have entered <code>&lt;VAL&gt;</code> characters.
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a id="ERR_NGROK_500" href="/docs/errors/err_ngrok_500">ERR_NGROK_500</a>
       </td>
       <td class="pre-wrapped">
@@ -2449,6 +2457,14 @@
       </td>
       <td class="pre-wrapped">
         This ngrok account has reached its Enterprise traffic policy connection limit for the month. Please log into https://dashboard.ngrok.com to view your options.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_741" href="/docs/errors/err_ngrok_741">ERR_NGROK_741</a>
+      </td>
+      <td class="pre-wrapped">
+        Internal server error.
       </td>
     </tr>
     <tr>
@@ -4898,6 +4914,23 @@
     </tr>
     <tr>
       <td>
+        <a id="ERR_NGROK_2224" href="/docs/errors/err_ngrok_2224">ERR_NGROK_2224</a>
+      </td>
+      <td class="pre-wrapped">
+        <code>&lt;DIRECTION&gt;</code> action <code>&lt;TYP&gt;</code> failed to compile template expressions in configuration headers.
+        <code>&lt;ERR&gt;</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_2225" href="/docs/errors/err_ngrok_2225">ERR_NGROK_2225</a>
+      </td>
+      <td class="pre-wrapped">
+        Invalid configuration for <code>&lt;ACTION&gt;</code>: <code>&lt;CONFIG&gt;</code> duration of <code>&lt;ACTUAL&gt;</code> exceeded limit of <code>&lt;MAX&gt;</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a id="ERR_NGROK_3002" href="/docs/errors/err_ngrok_3002">ERR_NGROK_3002</a>
       </td>
       <td class="pre-wrapped">
@@ -5723,6 +5756,15 @@
     </tr>
     <tr>
       <td>
+        <a id="ERR_NGROK_4023" href="/docs/errors/err_ngrok_4023">ERR_NGROK_4023</a>
+      </td>
+      <td class="pre-wrapped">
+        Your account does not have access to <code>&lt;FEATURE&gt;</code>.
+        Contact us to get access to this feature: <a href="https://ngrok.com/enterprise/contact">https://ngrok.com/enterprise/contact</a>?ref=pricing-prod-custom
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a id="ERR_NGROK_4100" href="/docs/errors/err_ngrok_4100">ERR_NGROK_4100</a>
       </td>
       <td class="pre-wrapped">
@@ -6335,6 +6377,30 @@
       </td>
       <td class="pre-wrapped">
         Your account can't use the event source filter feature.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_5136" href="/docs/errors/err_ngrok_5136">ERR_NGROK_5136</a>
+      </td>
+      <td class="pre-wrapped">
+        The provided azure logs ingestion data collection rule ID is missing or invalid.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_5137" href="/docs/errors/err_ngrok_5137">ERR_NGROK_5137</a>
+      </td>
+      <td class="pre-wrapped">
+        The provided azure logs ingestion data collection stream name is missing or invalid.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_5138" href="/docs/errors/err_ngrok_5138">ERR_NGROK_5138</a>
+      </td>
+      <td class="pre-wrapped">
+        The provided azure logs ingestion URI is missing or invalid.
       </td>
     </tr>
     <tr>
@@ -9442,6 +9508,22 @@
     </tr>
     <tr>
       <td>
+        <a id="ERR_NGROK_9025" href="/docs/errors/err_ngrok_9025">ERR_NGROK_9025</a>
+      </td>
+      <td class="pre-wrapped">
+        You cannot specify both "Policy" and "TrafficPolicy". Use "TrafficPolicy" as "Policy" is deprecated.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_9026" href="/docs/errors/err_ngrok_9026">ERR_NGROK_9026</a>
+      </td>
+      <td class="pre-wrapped">
+        The TrafficPolicy you provided is invalid: <code>&lt;ERROR&gt;</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a id="ERR_NGROK_10000" href="/docs/errors/err_ngrok_10000">ERR_NGROK_10000</a>
       </td>
       <td class="pre-wrapped">
@@ -9898,6 +9980,14 @@
     </tr>
     <tr>
       <td>
+        <a id="ERR_NGROK_10090" href="/docs/errors/err_ngrok_10090">ERR_NGROK_10090</a>
+      </td>
+      <td class="pre-wrapped">
+        The request you are trying to view was not found.
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a id="ERR_NGROK_11000" href="/docs/errors/err_ngrok_11000">ERR_NGROK_11000</a>
       </td>
       <td class="pre-wrapped">
@@ -10094,6 +10184,22 @@
       </td>
       <td class="pre-wrapped">
         This agent has exceeded its policy rule limit of <code>&lt;LIMIT&gt;</code>. Please log into https://dashboard.ngrok.com to view your options.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_15005" href="/docs/errors/err_ngrok_15005">ERR_NGROK_15005</a>
+      </td>
+      <td class="pre-wrapped">
+        The binding <code>&lt;BINDING&gt;</code> is invalid.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a id="ERR_NGROK_15006" href="/docs/errors/err_ngrok_15006">ERR_NGROK_15006</a>
+      </td>
+      <td class="pre-wrapped">
+        The binding <code>&lt;BINDING&gt;</code> was specified multiple times, but duplicate bindings are not allowed.
       </td>
     </tr>
     <tr>

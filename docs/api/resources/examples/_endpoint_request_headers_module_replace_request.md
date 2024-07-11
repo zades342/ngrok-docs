@@ -9,5 +9,5 @@ curl \
 -H "Content-Type: application/json" \
 -H "Ngrok-Version: 2" \
 -d '{"add":{"X-Baz":"qux","X-Foo":"bar"},"remove":["X-Internal-Header"]}' \
-https://api.ngrok.com/endpoint_configurations/ec_2hrGykAolXQqdXLqz7q3AkH6LJt/request_headers
+https://api.ngrok.com/endpoint_configurations/ec_2j6ltCv0R56N2CGKr36zF4iAfp7/request_headers
 ```

@@ -9,5 +9,5 @@ curl \
 -H "Content-Type: application/json" \
 -H "Ngrok-Version: 2" \
 -d '{"add":{"Cache-Control":"no-cache, no-store","X-XSS-Protection":"1; mode=block"}}' \
-https://api.ngrok.com/endpoint_configurations/ec_2hrGykAolXQqdXLqz7q3AkH6LJt/response_headers
+https://api.ngrok.com/endpoint_configurations/ec_2j6ltCv0R56N2CGKr36zF4iAfp7/response_headers
 ```

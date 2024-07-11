@@ -6,17 +6,17 @@
 {
 	"ip_restrictions": [
 		{
-			"created_at": "2024-06-14T06:03:59Z",
+			"created_at": "2024-07-11T16:33:40Z",
 			"enforced": false,
-			"id": "ipx_2hrGylaEX0u0vkxNnr64OsFEXpU",
+			"id": "ipx_2j6ltKttpTwejKtmJqmcvLfVgvZ",
 			"ip_policies": [
 				{
-					"id": "ipp_2hrGyndnUPYMd4Oip2Cw0clctHG",
-					"uri": "https://api.ngrok.com/ip_policies/ipp_2hrGyndnUPYMd4Oip2Cw0clctHG"
+					"id": "ipp_2j6ltHGtxv78IM8X7cFo5q9C9jQ",
+					"uri": "https://api.ngrok.com/ip_policies/ipp_2j6ltHGtxv78IM8X7cFo5q9C9jQ"
 				}
 			],
 			"type": "dashboard",
-			"uri": "https://api.ngrok.com/ip_restrictions/ipx_2hrGylaEX0u0vkxNnr64OsFEXpU"
+			"uri": "https://api.ngrok.com/ip_restrictions/ipx_2j6ltKttpTwejKtmJqmcvLfVgvZ"
 		}
 	],
 	"next_page_uri": null,
